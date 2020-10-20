@@ -28,9 +28,6 @@ class Car implements Runnable {
 
     public void run() {
         try {
-//            if (gasStation.assignPump(this)) {
-//                gasStation.useGasPump(this);
-//            }
             boolean stillRunning = true;
             while (stillRunning) {
                 if (!gasStation.assignPump(this)) {
